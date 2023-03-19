@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    background: #ffffff;
+}
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header{
+    background-color:	#58ACFA;
+    padding: 10px 0 10px 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.col-2{
+flex: 0 0 15%;
+max-width: 15%;
+}
+.col-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-8{
+    flex: 0 0 55%;
+    max-width: 55%;
+    align-items: center;
+}
+.col-12{
+    flex: 0 0 85%;
+    max-width: 85%;
+    align-items: center;
+}
+.menu ul li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+/* menu nhỏ khi di chuột vào SảnPhaamr */
+ul.menu-child-1 {
+    position: absolute;
+    width: 200px;
+    background-color: #58ACFA;
+}
+ul.menu-child-1 li{
+    float: none;
+    padding: 20px 0 0 0;
+    display: none;
+}
+.menu ul li:hover ul.menu-child-1 li{
+    display:block;
+}
+/* menu nhỏ khi  di chuột vào Liên hệ  */
+ul.menu-child-2 {
+    position: absolute;
+    width: 200px;
+    background-color: #58ACFA;
+    border-radius: 15%;
+}
+ul.menu-child-2 li{
+    float: none;
+    padding: 20px 0 0 0;
+    display: none;
+}
+.menu ul li:hover ul.menu-child-2 li{
+    display:block;
+}
+
