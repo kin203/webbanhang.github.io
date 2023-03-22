@@ -2,27 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 1em sans-serif;
     
 }
 body{
     height: 100vh;
-    background: #ffffff;
+    background: #ebe8e8;
 }
+/* Setting the max-width of the container to 1440px and then centering it. */
 .container{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
+/* Setting the display to flex, max-width to 100%, flex-wrap to wrap, margin-left to 20px, and
+margin-right to 20px. */
 .row{
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 20px;
 }
 header{
-    background-color:	#58ACFA;
-    padding: 10px 0 10px 0;
+    background-color:	gray;
+    padding: 5px 0 5px 0;
 }
 a{
     text-decoration: none;
@@ -37,16 +41,22 @@ max-width: 15%;
     flex: 0 0 25%;
     max-width: 25%;
 }
+/* Making the column take up 55% of the screen and aligning the items in the center. */
 .col-8{
     flex: 0 0 55%;
     max-width: 55%;
     align-items: center;
 }
-.col-12{
-    flex: 0 0 85%;
-    max-width: 85%;
+.col-10 {
+    flex: 0 0 15%;
+    max-width: 25%;
     align-items: center;
 }
+.col-10 a{
+    font-size: 15px;
+}
+/* Making the menu items float to the left and have a margin of 20px. It is also making the menu
+display flex and justify the content to the right. */
 .menu ul li{
     float: left;
     margin-left: 20px;
@@ -56,11 +66,12 @@ max-width: 15%;
     display: flex;
     justify-content: flex-end;
 }
-/* menu nhỏ khi di chuột vào SảnPhaamr */
+/* The CSS for the submenu. */
 ul.menu-child-1 {
     position: absolute;
-    width: 200px;
+    width: 150px;
     background-color: #58ACFA;
+    border-radius: 5%;
 }
 ul.menu-child-1 li{
     float: none;
@@ -70,12 +81,13 @@ ul.menu-child-1 li{
 .menu ul li:hover ul.menu-child-1 li{
     display:block;
 }
-/* menu nhỏ khi  di chuột vào Liên hệ  */
+
+/* The CSS for the submenu. */
 ul.menu-child-2 {
     position: absolute;
-    width: 200px;
+    width: 100px;
     background-color: #58ACFA;
-    border-radius: 15%;
+    border-radius: 5%;
 }
 ul.menu-child-2 li{
     float: none;
@@ -85,4 +97,4 @@ ul.menu-child-2 li{
 .menu ul li:hover ul.menu-child-2 li{
     display:block;
 }
-
+.mySlides {display:none; width:100%}
